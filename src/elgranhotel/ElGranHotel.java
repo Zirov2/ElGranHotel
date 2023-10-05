@@ -6,7 +6,9 @@
 package elgranhotel;
 
 import elgranhotel.AccesoDatos.Conexion;
+import elgranhotel.AccesoDatos.Habitacion;
 import elgranhotel.AccesoDatos.HuespedData;
+import elgranhotel.Entidades.abmHabitacion;
 import elgranhotel.Entidades.abmHuesped;
 import java.sql.Connection;
 /**
@@ -22,8 +24,8 @@ public class ElGranHotel {
         // TODO code application logic here
 
         Connection con = Conexion.getConexion();
-        abmHuesped Horacio = new abmHuesped(1, "Horacio", 34548774, "Pueyrredon 1585", "horacio@hotmail.com", 1545168577);
-        HuespedData hues = new HuespedData();
+       // abmHuesped Horacio = new abmHuesped(1, "Horacio", 34548774, "Pueyrredon 1585", "horacio@hotmail.com", 1545168577);
+       // HuespedData hues = new HuespedData();
 
         //   hues.guardarHuesped(Horacio);
         
@@ -40,8 +42,36 @@ public class ElGranHotel {
         System.out.println("celular " +huespedEncontrado.getCelular());
          */
         
+       /* abmHabitacion habi= new abmHabitacion();
+        for (Habitacion habitacion: habi.ListaHabitacion()){
+            System.out.println("Categoria "+habitacion.getIdCategoria());
+            System.out.println("cantPersonas "+habitacion.getCantPersonas());
+            System.out.println("cantCamas "+habitacion.getCantCamas());
+            System.out.println("Precio por Noche "+habitacion.getPrecioXnoche());
+            System.out.println("000000000");
+        }
+        */
+       Habitacion habi = new Habitacion(2,3,2,"HOLA",5,true);
+       abmHabitacion nuevaH = new abmHabitacion();
+       nuevaH.guardarHabitacion(habi);
+       
         
-    }
+    
+       
+       
+       
+       
+       
+       /*  Habitacion nuevaHabitacion = new Habitacion();
+    nuevaHabitacion.setIdCategoria(1); // Reemplaza con el valor correcto.
+    nuevaHabitacion.setCantPersonas(2); // Reemplaza con el valor correcto.
+    nuevaHabitacion.setCantCamas(1); // Reemplaza con el valor correcto.
+    nuevaHabitacion.setTipoCama("Cama Doble"); // Reemplaza con el valor correcto.
+    nuevaHabitacion.setPrecioXnoche(100.0); // Reemplaza con el valor correcto.
+    
+    nuevaHabitacion.guardarHabitacion(nuevaHabitacion);*/
+        
 
+}
 }
     

@@ -4,10 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Octavio/Documents/NetBeansProjects/ElGranHotel/src/elgranhotel/Entidades/abmHuesped.java</file>
-            <file>file:/C:/Users/Octavio/Documents/NetBeansProjects/ElGranHotel/src/elgranhotel/AccesoDatos/TipoHabitacion.java</file>
-            <file>file:/C:/Users/Octavio/Documents/NetBeansProjects/ElGranHotel/src/elgranhotel/AccesoDatos/Conexion.java</file>
             <file>file:/C:/Users/Octavio/Documents/NetBeansProjects/ElGranHotel/src/elgranhotel/AccesoDatos/HuespedData.java</file>
             <file>file:/C:/Users/Octavio/Documents/NetBeansProjects/ElGranHotel/src/elgranhotel/Entidades/abmHabitacion.java</file>
+            <file>file:/C:/Users/Octavio/Documents/NetBeansProjects/ElGranHotel/src/elgranhotel/AccesoDatos/Habitacion.java</file>
             <file>file:/C:/Users/Octavio/Documents/NetBeansProjects/ElGranHotel/src/elgranhotel/ElGranHotel.java</file>
         </group>
     </open-files>
