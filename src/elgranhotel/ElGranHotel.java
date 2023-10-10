@@ -24,11 +24,15 @@ public class ElGranHotel {
         // TODO code application logic here
 
         Connection con = Conexion.getConexion();
-       // abmHuesped Horacio = new abmHuesped(1, "Horacio", 34548774, "Pueyrredon 1585", "horacio@hotmail.com", 1545168577);
-       // HuespedData hues = new HuespedData();
-
-        //   hues.guardarHuesped(Horacio);
-        
+//        abmHuesped Horacio = new abmHuesped(1, "Horacio", 34548774, "Pueyrredon 1585", "horacio@hotmail.com", 1545168577);
+//        abmHuesped Gab = new abmHuesped(1, "Gabriel", 34548784, "Santana 666", "drCadilac@hotmail.com", 1545168987);
+//        abmHuesped Magi = new abmHuesped(1, "Maggi", 32348784, "calle falsa 123", "Simpsons03@hotmail.com", 1545198987);
+        HuespedData hues = new HuespedData();
+//
+//           hues.guardarHuesped(Horacio);
+//           hues.guardarHuesped(Gab);
+           //hues.guardarHuesped(Magi);
+//        
         // abmHuesped HuesBuscar = new abmHuesped();
         
         /* hues.modificarHuesped(Horacio);
@@ -42,6 +46,22 @@ public class ElGranHotel {
         System.out.println("celular " +huespedEncontrado.getCelular());
          */
         
+       
+       hues.eliminarHuesped(5);
+         
+    }
+}
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
        /* abmHabitacion habi= new abmHabitacion();
         for (Habitacion habitacion: habi.ListaHabitacion()){
             System.out.println("Categoria "+habitacion.getIdCategoria());
@@ -50,10 +70,19 @@ public class ElGranHotel {
             System.out.println("Precio por Noche "+habitacion.getPrecioXnoche());
             System.out.println("000000000");
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
         */
-       Habitacion habi = new Habitacion(2,3,2,"HOLA",5,true);
-       abmHabitacion nuevaH = new abmHabitacion();
-       nuevaH.guardarHabitacion(habi);
+//       Habitacion habi = new Habitacion(2,3,2,"HOLA",5,true);
+//       abmHabitacion nuevaH = new abmHabitacion();
+//       nuevaH.guardarHabitacion(habi);
        
         
     
@@ -72,6 +101,4 @@ public class ElGranHotel {
     nuevaHabitacion.guardarHabitacion(nuevaHabitacion);*/
         
 
-}
-}
-    
+  

@@ -75,22 +75,26 @@ public class HuespedData {
 }
 
     
-  /*  public void eliminarHuesped (int idHuesped){
+   public void eliminarHuesped(int id){
+         
+        //String sql="UPDATE huesped SET estado=1 WHERE idHuesped=?";
+        String sql = "UPDATE huesped SET estado = 0 WHERE idHuesped = ?";
+    try {
+        PreparedStatement ps=con.prepareStatement(sql);
+        ps.setInt(1, id);
+        int cambiaEstado=ps.executeUpdate();
         
-        String sql="UPDATE huesped SET estado= 0 WHERE idHuesped=?";
-        PreparedStatement ps;
-        try {
-            ps = con.prepareStatement(sql);
-            ps.setInt(1, idHuesped);
-            int exito = ps.executeUpdate();
-            if (exito==1 ){
-                JOptionPane.showMessageDialog(null, "Huesped Eliminado");
-            }
-        } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null,"Error al acceder a la tabla huesped para eliminar" );
-        }
+        if(cambiaEstado==1)
+         JOptionPane.showMessageDialog(null,"Huesped eliminado");
+        ps.close();
         
-    }*/
+    } catch (SQLException ex) {
+         JOptionPane.showMessageDialog(null,"Error al acceder a la "
+                + "tabla Huesped");
+         
+    }
+    
+    }
     
     public abmHuesped buscarHuespedDni(int dni) {
    abmHuesped huesped = null;
@@ -119,7 +123,7 @@ public class HuespedData {
    JOptionPane.showMessageDialog(null, "Error al acceder a la tabla huesped x BUSCAR ");
    }
    return huesped;
-   }
+   } 
 
 
    
